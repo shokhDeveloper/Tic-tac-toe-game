@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <style>
+        .ceil:nth-child(1){
+            border-top-left-radius: 10px;
+        }
+        .ceil:nth-child(3){
+            border-top-right-radius: 10px;
+        }
+        .ceil:nth-child(9){
+            border-bottom-right-radius: 10px;
+        }
+        .ceil:nth-child(7){
+            border-bottom-left-radius: 10px;
+        }
+    </style>
+</head>
+<body class="bg-dark">
+
+    <header class="bg-light text-center py-2">
+        <div class="container">
+            <h1>Tic-tac toe</h1>
+        </div>
+    </header>
+    <template>
+        <li class="col-4 ceil text-center bg-light text-dark border p-3" style="font-size: 50px; height: 100px;">
+            <!-- X -->
+        </li>
+    </template>
+    <main>
+        <section class="board border d-flex justify-content-center align-items-center" style="min-height: 90vh;">
+            <div class="container">
+                <div class="board__inner  w-50 mx-auto text-center">
+                    <ul class="board_inner__list list-unstyled row ">
+                        
+                    </ul>
+                    <div class="board__btn_box w-100 text-center">
+                        <button class="board__reset btn btn-primary">Reset</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div class="main_modal__overlay position-fixed top-0 end-0 start-0 bottom-0 d-none align-items-center justify-content-center" style="background: rgba(0, 0, 0, 0.4);">
+        <div class="main--modal w-100 p-2 bg-light ">
+            <div class="modal__discription text-center">
+                <h3 class="modal__title"></h3>  
+            </div>
+        </div>
+    </div>
+    
+    <script src="./bootstrap/js/bootstrap.min.js"></script>    
+    <script src="./main.js"></script>
+</body>
+</html>
